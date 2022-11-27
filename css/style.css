@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to Ttop, rgb(117, 132, 132), white);
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  height: 100vh;
+}
+
+.navigation{
+  overflow: hidden;
+  background-color: white;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.navigation nav ul{
+  list-style-type: none;
+  /* removes the bullet points */
+  border-top: 2px dotted rgb(48, 44, 44);
+  border-bottom: 1px solid grey;
+  padding: 0.5rem;
+  margin: 0;
+  /* 0 values remove the default margins in a ul */
+  display: flex;
+  flex-flow: row nowrap;
+  /*Flex Box*/
+  justify-content: space-around;
+}
+
+.navigation nav li{
+  border: 0 solid yellow;
+  text-align: center;
+  flex-basis: 20%;
+  /*Flex Box*/
+}
+
+.navigation nav a{
+  border: 0 solid red;
+  border-radius: 10px;
+  background-color: #c1c7d846;
+  color: rgb(78, 16, 75);
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  /* a is an in-line element by default. To change it to a block element we need to add this ^ */
+  padding: 0.5rem;
+  
+}
+.navigation nav a:hover{
+  background-color: #e0960d;
+  color: rgb(255, 255, 255);
+}
+
+.card {
+  align-items: center;
+  background-color: lightgray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+  padding: 50px;
+}
+
+.card nav{
+  border: 0 solid blue;
+  width: 80%;
+}
+
+.card ul{
+  border: 0 solid rgb(69, 51, 117);
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  /*Flex Box*/
+  justify-content: space-around;
+;
+}
+
+.card li{
+  border: 0 solid pink;
+  background-color: none;
+  text-align: center;
+  flex-basis: 20%;
+  /*Flex Box*/
+ 
+  
+}
+
+.card a{
+  border: 0 solid black;
+  background-color:none;
+  color: #e0960d;
+  font-weight: lighter;
+  text-decoration: none;
+  display: block;
+  /* a is an in-line element by default. To change it to a block element we need to add this ^ */
+  padding: 0.5rem 3rem;
+}
+.card a:hover{
+   color: rgb(57, 19, 226);
+   background-color:none;
+   text-decoration: underline;
+  
+}
+
+.nav-item {
+  align-self: flex-end;
+  color: #3d6ded;
+}
+
+.page-wrapper {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+}
+
+footer{
+  border-top: 1.5px solid rgb(226, 160, 60);
+  padding: 2rem;
+  margin: 5rem;
+  text-align: center;
+  font-size: 0.7rem;
+  color: rgb(83, 81, 81);
+}
+
+footer div{
+  padding: 0.7rem;
+}
+
+footer ul{
+  border: 0 solid rgb(81, 0, 128);
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: column nowrap;
+  /*Flex Box - creates a horizontal nav bar */
+  justify-content: space-around;
+}
+
+footer li{
+  border: 0 solid
+  black;
+  text-align: center;
+  flex-basis: 25%;
+  /*Flex Box*/
+
+}
+
+footer a{
+  border: 0 solid black;
+  color: rgb(27, 150, 37);
+  text-decoration: underline;
+  display: block;
+  /* a is an in-line element by default. To change it to a block element we need to add this ^ */
+  padding: 0.5rem;
+}
+
+.pagetitle h1{
+  border: 0 solid purple;
+  margin-bottom: 0;
+  color: #e0960d;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 7rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.wrapper {
+	width: 80%;
+  background-color: lightgray;
+  border-radius: 10px;
+	margin: 0 auto;
+	padding: 1rem;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.wrapper2 {
+	width: 80%;
+  background-color: rgb(150, 40, 40);
+  border-radius: 10px;
+	margin: 0 auto;
+	padding: 1rem;
+	display: flex;
+	flex-flow: column nowrap;
+  margin-bottom: 2rem;
+ 
+  
+}
+
+section {
+	flex-basis: 65%;
+	margin-right: 10%;
+}
+
+p {
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+  color: #e2730b;
+  border: 2px solid rgb(14, 70, 42);
+  width: 80%;
+
+}
+
+div{
+  margin-bottom: 1rem;
+}
+
+.cities ul{
+  border: 2px solid rgb(81, 0, 128);
+  margin: 0 0 0 5rem;
+  padding: 0;
+  list-style-type: decimal;
+  font-weight: bold;
+}
+
+fieldset {
+	border: 1px solid rgb(133, 41, 41);
+	border-radius: 10px;}
+
+legend {
+	font-weight: bold;
+  color: #9A2B27;
+	font-size: 1.3rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	display: block;
+}
+
+label {
+  border: 0 solid green;
+	display: block;
+}
+
+textarea, input {
+	display: block;
+	margin-bottom: 2rem;
+	width: 20rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+  border: none;
+	border-radius: 0;
+	padding: 0 1rem;
+}
+
+button {
+	margin: 2rem 0;
+	background-color: #BB342F;
+	color: white;
+	border: none;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+  
+}
+button:hover {
+	background-color: #ffffff;
+  color: red;
+}
+
+
+
+
+
+
